@@ -1,0 +1,28 @@
+@import '../../config.scss';
+
+.gallery-container {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    gap: 50px 30px;
+  }
+}
+
+
+@media(min-width: $mediaPortraitMobileSize) and (max-width: $mediaLandscapeMobileSize) {
+  .gallery-container{
+    .gallery {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+@media(max-width: $mediaPortraitMobileSize) {
+  .gallery-container{
+    margin-top: 50px;
+
+    .gallery {
+      grid-template-columns: 1fr;
+    }
+  }
+}

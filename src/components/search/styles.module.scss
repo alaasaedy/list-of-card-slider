@@ -1,0 +1,22 @@
+.search {
+  text-align: center;
+  .search-input {
+    background-color: #2E3F60;
+    height: 42px;
+    border-radius: 23px;
+    border: none;
+    margin: auto;
+    color: #fff;
+    padding-left: 14px;
+
+    &::placeholder {
+      color: #fff;
+      padding-left: 24px;
+      vertical-align: middle;
+    }
+
+    &:focus, input:focus{
+      outline: none;
+    }
+  }
+}

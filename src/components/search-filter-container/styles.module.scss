@@ -1,0 +1,24 @@
+@import '../../config.scss';
+
+.search-filter-container {
+  background-color: $secondaryColor;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 16px 0;
+}
+
+
+@media(min-width: $mediaPortraitMobileSize) and (max-width: $mediaTabletSize - $mediaAvoidOverLapingGap) {
+  .search-filter-container {
+    width: 100%;
+  }
+}
+
+// @media(min-width: $mediaTabletSize) {
+//   .search-filter-container {
+//     height: 286px;
+//   }
+// }
